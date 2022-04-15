@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HLBot</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!--#1 CSS Files-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--Muli font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/robot-face_1f916.png"
+      rel="icon"
+    />
+  </head>
+  <body>
+    <div class="botui-app-container" id="hlbot">
+      <div class="user-bar">
+        <!-- <div class="back">
+          <span class="iconify" data-icon="zmdi-arrow-left" data-inline="false"></span>
+        </div> -->
+        <div class="avatar">
+          <img src="img/logo.png" alt="Avatar" />
+        </div>
+        <div class="name">
+          <h1>Virtuele assistent Dirk</h1>
+        </div>
+        <div class="button-maxmin">
+          <button id="button">
+            <span class="material-icons">
+              keyboard_arrow_down
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <bot-ui></bot-ui>
+
+      <div id="progressContainer">
+        <div id="progressContainerInner">
+          <div id="progressBar">
+            <div id="progressBarFill"></div>
+          </div>
+          <p id="progressText"></p>
+        </div>
+      </div>
+    </div>
+    <!--#3 Javascript Files-->
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="./js/timestamp.js"></script>
+    <!--File met de functies om timestamps neer te zetten boven textballonnen-->
+    <script src="./js/botui.js"></script>
+    <!--Aangepaste botui library, zorgt ervoor dat je in de buttons ook afbeeldingen kan laten staan in antwoorden gebruiker -->
+    <script src="./js/bot.js"></script>
+    <!--File waarin alles van de bot gebeurt (vragen etc)-->
+    <script src="./js/button.js"></script>
+    <script src="./js/progressbar.js"></script>
+    <!--File waarin alles van de de functie staat om met een knop de chatbot te laten verdwijnen-->
+  </body>
+</html>

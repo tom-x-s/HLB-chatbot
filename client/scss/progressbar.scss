@@ -1,0 +1,40 @@
+@import "_colors.scss";
+
+#progressContainer {
+  height: 35px;
+  width: 100%;
+  opacity: 1;
+  background-color: $dark_blue;
+  color: $white;
+  box-shadow: -1px 0px 1px 1px rgba(0, 0, 0, 0.1);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.2s;
+}
+#progressContainerInner {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  transition: ease-in-out 0.2s;
+}
+#progressBar {
+  width: 80%;
+  height: 7px;
+  border: 1px solid $white;
+  border-radius: 7px;
+}
+#progressBarFill {
+  width: 0;
+  height: 100%;
+  background-color: $yellow;
+  border-radius: 7px;
+  transition: ease-in-out 0.2s;
+}
+#progressText {
+  font-size: 10px;
+}

@@ -1,0 +1,22 @@
+@import '_typography.scss';
+
+@import 'botui.scss';
+@import 'progressbar.scss';
+@import 'scrollbar.scss';
+@import 'userbar.scss';
+
+body {
+  margin: 0;
+  background-image: url('../img/bg.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: none;
+  }
+}
